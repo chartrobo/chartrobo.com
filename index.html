@@ -4,25 +4,40 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Chart Robo | Home</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <script>
-  if (location.hostname === "chartrobo.com") {
-    location.href = "https://www.chartrobo.com" + location.pathname + location.search + location.hash;
-  }
-</script>
 
+  <!-- SEO Meta Description -->
+  <meta name="description" content="Chart Robo is your smart trading assistant that helps you spot and strike high-probability trades confidently.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Redirect to HTTPS and www -->
+  <script>
+    if (
+      location.protocol !== "https:" ||
+      location.hostname === "chartrobo.com"
+    ) {
+      location.href = "https://www.chartrobo.com" + location.pathname + location.search + location.hash;
+    }
+  </script>
 </head>
 <body>
+
   <header>
-    <img src="images/logo.png" alt="Chart Robo Logo" width="200">
-    <h1>Welcome to Chart Robo</h1>
-    <nav>
+    <div class="logo">
+      <img src="images/logo.png" alt="Chart Robo Logo" width="200">
+      <h1>Welcome to Chart Robo</h1>
+    </div>
+
+    <nav aria-label="Main navigation">
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
       <a href="services.html">Services</a>
       <a href="contact.html">Contact Us</a>
       <a href="free-trial.html">Free Trial</a>
-
     </nav>
   </header>
 
@@ -32,16 +47,16 @@
   </main>
 
   <footer>
-<nav>
-    <a href="privacy-policy.html">Privacy Policy</a>
-    <a href="terms-and-conditions.html">Terms & Conditions</a>
-    <a href="cancellation-refund.html">Cancellation & Refund</a>
-    <a href="shipping-and-delivery.html">Shipping & Delivery</a>
-    
-  </nav>
+    <nav aria-label="Footer navigation">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-and-conditions.html">Terms & Conditions</a>
+      <a href="cancellation-refund.html">Cancellation & Refund</a>
+      <a href="shipping-and-delivery.html">Shipping & Delivery</a>
+    </nav>
     <p>&copy; 2025 Chart Robo. All rights reserved.</p>
   </footer>
 
+  <!-- JavaScript -->
   <script src="js/script.js"></script>
 </body>
 </html>

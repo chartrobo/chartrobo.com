@@ -54,18 +54,11 @@ nav ul li a.active {
     align-items: center;
     gap: 10px;
     margin-right: 20px;
-    flex-wrap: wrap;
-}
-
-.social-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .social-icon img {
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
     transition: transform 0.2s ease;
 }
 
@@ -87,7 +80,7 @@ nav ul li a.active {
 }
 
 main {
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 section {
@@ -244,14 +237,6 @@ section p a:hover {
     }
     .pricing-grid {
         grid-template-columns: 1fr;
-    }
-}
-
-/* Reduce icon size on small devices */
-@media (max-width: 480px) {
-    .social-icon img {
-        width: 24px;
-        height: 24px;
     }
 }
 

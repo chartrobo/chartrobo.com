@@ -31,10 +31,6 @@ header {
     height: auto;
 }
 
-nav {
-    display: flex;
-}
-
 nav ul {
     list-style: none;
     display: flex;
@@ -57,6 +53,7 @@ nav ul li a.active {
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-right: 20px;
 }
 
 .social-icon img {
@@ -75,6 +72,7 @@ nav ul li a.active {
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
+    display: inline-block;
 }
 
 .sticky-button:hover {
@@ -89,7 +87,6 @@ section {
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
-    text-align: center;
 }
 
 section h1, section h2, section h3 {
@@ -181,6 +178,11 @@ footer nav a:hover {
     background: #218838;
 }
 
+/* Hide old UL and h3 if any */
+.pricing-card ul, .pricing-card h3, .pricing-card .price {
+    display: none;
+}
+
 /* Contact Us Section Enhancements */
 section p a {
     color: #007bff;
@@ -189,6 +191,10 @@ section p a {
 
 section p a:hover {
     color: #0056b3;
+}
+
+.contact-links a {
+    margin-right: 10px;
 }
 
 /* Hamburger Menu */
@@ -201,43 +207,34 @@ section p a:hover {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-
     nav {
         display: none;
         width: 100%;
     }
-
     nav.active {
         display: block;
     }
-
     nav ul {
         flex-direction: column;
         gap: 10px;
-        background: white;
         padding: 10px 0;
-        border-top: 1px solid #ddd;
-        width: 100%;
     }
-
+    .menu-toggle {
+        display: block;
+    }
     header {
         flex-direction: column;
         align-items: flex-start;
     }
-
     .header-right {
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 0;
         margin-top: 10px;
-        justify-content: flex-start;
     }
-
     .sticky-button {
         margin-top: 10px;
     }
-
     .pricing-grid {
         grid-template-columns: 1fr;
     }
@@ -256,5 +253,42 @@ section p a:hover {
 }
 
 .form-button:hover {
+    background-color: #0056b3;
+}
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 20px 50px;
+}
+
+.hero-section img.logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.hero-section h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.hero-section p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.hero-section button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-section button:hover {
     background-color: #0056b3;
 }

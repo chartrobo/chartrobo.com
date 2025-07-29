@@ -54,7 +54,17 @@ nav ul li a.active {
     align-items: center;
     gap: 10px;
     margin-right: 20px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* Force horizontal layout */
+    overflow-x: auto;  /* Enable horizontal scroll if needed */
+    white-space: nowrap;
+}
+
+.header-right::-webkit-scrollbar {
+    display: none; /* Hide scrollbar (optional aesthetic) */
+}
+
+.social-icon {
+    flex: 0 0 auto; /* Prevent shrinking */
 }
 
 .social-icon img {
@@ -88,7 +98,7 @@ section {
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
-    text-align: center; /* Center the content */
+    text-align: center; /* Centering content like logo and headings */
 }
 
 section h1, section h2, section h3 {
@@ -180,23 +190,23 @@ footer nav a:hover {
     background: #218838;
 }
 
-/* Hide old UL and h3 if any */
+/* Hide old UL and h3 if any in pricing */
 .pricing-card ul, .pricing-card h3, .pricing-card .price {
     display: none;
 }
 
-/* Contact Us Section Enhancements */
-section p a {
-    color: #007bff;
-    text-decoration: underline;
+/* Buttons inside section (Live Trading Button) */
+section button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-section p a:hover {
-    color: #0056b3;
-}
-
-.contact-links a {
-    margin-right: 10px;
+section button:hover {
+    background-color: #0056b3;
 }
 
 /* Hamburger Menu */
@@ -209,6 +219,19 @@ section p a:hover {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header-left {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .header-right {
+        width: 100%;
+        justify-content: flex-start;
+    }
     nav {
         display: none;
         width: 100%;
@@ -224,31 +247,14 @@ section p a:hover {
     .menu-toggle {
         display: block;
     }
-    header {
-        flex-direction: column;
-        align-items: flex-start;
+    .sticky-button {
+        margin-top: 10px;
     }
-    .header-right {
-        flex-wrap: nowrap; /* No wrap */
-        overflow-x: auto;   /* Scroll if needed */
-        justify-content: center;
-        gap: 10px;
-        margin: 10px 0;
-    }
-    .header-right::-webkit-scrollbar {
-        display: none; /* Hide scrollbar */
+    .pricing-grid {
+        grid-template-columns: 1fr;
     }
 }
 
-/* Reduce social icon size on very small screens */
-@media (max-width: 480px) {
-    .social-icon img {
-        width: 20px;
-        height: 20px;
-    }
-}
-
-/* Form Button Styling */
 .form-button {
     display: inline-block;
     padding: 12px 25px;

@@ -27,7 +27,7 @@ header {
 }
 
 .header-logo {
-    width: 50px;
+    width: 40px;
     height: auto;
 }
 
@@ -53,27 +53,22 @@ nav ul li a.active {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-right: 20px;
-    flex-wrap: wrap;
+    margin-right: 10px;
 }
 
-/* Social Icons Updated */
+/* Social Icons Compact Styling */
 .social-icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    height: 30px;
-    background-color: #f1f1f1;
-    border-radius: 50%;
-    padding: 5px;
-    box-sizing: content-box;
-    transition: background 0.3s ease;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
 }
 
 .social-icon img {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     transition: transform 0.2s ease;
 }
 
@@ -81,17 +76,14 @@ nav ul li a.active {
     transform: scale(1.1);
 }
 
-.social-icon:hover {
-    background-color: #e0e0e0;
-}
-
+/* Sticky Button */
 .sticky-button {
     background: #28a745;
     color: white;
-    padding: 10px 20px;
+    padding: 8px 16px;
     border-radius: 5px;
     text-decoration: none;
-    display: inline-block;
+    font-size: 14px;
 }
 
 .sticky-button:hover {
@@ -114,45 +106,6 @@ section h1, section h2, section h3 {
 
 section p, section ul {
     line-height: 1.6;
-}
-
-footer {
-    background: white;
-    color: black;
-    padding: 20px;
-    text-align: center;
-    border-top: 1px solid #ddd;
-}
-
-footer nav {
-    margin: 10px 0;
-}
-
-footer nav a {
-    margin: 0 10px;
-    color: black;
-    text-decoration: none;
-}
-
-footer nav a:hover {
-    color: #28a745;
-}
-
-.whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #25D366;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 50%;
-    text-decoration: none;
-    font-size: 20px;
-    z-index: 1001;
-}
-
-.whatsapp-float:hover {
-    background-color: #1ebe5d;
 }
 
 /* Pricing Grid */
@@ -178,7 +131,7 @@ footer nav a:hover {
 }
 
 .plan-title {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     margin-bottom: 15px;
 }
@@ -199,6 +152,63 @@ footer nav a:hover {
 /* Hide old UL and h3 if any */
 .pricing-card ul, .pricing-card h3, .pricing-card .price {
     display: none;
+}
+
+footer {
+    background: white;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+footer nav {
+    margin: 10px 0;
+}
+
+footer nav a {
+    margin: 0 10px;
+    color: black;
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    color: #28a745;
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+    z-index: 1001;
+}
+
+.whatsapp-float:hover {
+    background-color: #1ebe5d;
+}
+
+/* Form Button */
+.form-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 20px 0;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: #0056b3;
 }
 
 /* Hamburger Menu */
@@ -233,10 +243,9 @@ footer nav a:hover {
     .header-right {
         flex-direction: row;
         flex-wrap: wrap;
-        align-items: center;
+        gap: 10px;
         margin-right: 0;
         margin-top: 10px;
-        gap: 8px;
     }
     .sticky-button {
         margin-top: 10px;
@@ -244,20 +253,4 @@ footer nav a:hover {
     .pricing-grid {
         grid-template-columns: 1fr;
     }
-}
-
-.form-button {
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 20px 0;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.form-button:hover {
-    background-color: #0056b3;
 }

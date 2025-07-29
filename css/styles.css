@@ -293,48 +293,16 @@ section p a:hover {
     background-color: #0056b3;
 }
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-
-    .header-left {
-        justify-content: center;
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
     .header-right {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap; /* Do not wrap */
+        overflow-x: auto;  /* Allow horizontal scroll if needed */
         justify-content: center;
         gap: 10px;
         margin: 10px 0;
     }
 
-    nav {
-        display: none;
-        width: 100%;
-        text-align: center;
-    }
-
-    nav.active {
-        display: block;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-        padding: 10px 0;
-    }
-
-    .menu-toggle {
-        display: block;
-        margin: 0 auto;
-    }
-
-    .sticky-button {
-        margin-top: 10px;
+    .header-right::-webkit-scrollbar {
+        display: none; /* Hide scrollbar for clean look */
     }
 }

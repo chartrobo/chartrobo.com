@@ -54,16 +54,35 @@ nav ul li a.active {
     align-items: center;
     gap: 10px;
     margin-right: 20px;
+    flex-wrap: wrap;
+}
+
+/* Social Icons Updated */
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    padding: 5px;
+    box-sizing: content-box;
+    transition: background 0.3s ease;
 }
 
 .social-icon img {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     transition: transform 0.2s ease;
 }
 
-.social-icon img:hover {
-    transform: scale(1.2);
+.social-icon:hover img {
+    transform: scale(1.1);
+}
+
+.social-icon:hover {
+    background-color: #e0e0e0;
 }
 
 .sticky-button {
@@ -95,7 +114,6 @@ section h1, section h2, section h3 {
 
 section p, section ul {
     line-height: 1.6;
-    margin-bottom: 10px;
 }
 
 footer {
@@ -183,20 +201,6 @@ footer nav a:hover {
     display: none;
 }
 
-/* Contact Us Section Enhancements */
-section p a {
-    color: #007bff;
-    text-decoration: underline;
-}
-
-section p a:hover {
-    color: #0056b3;
-}
-
-.contact-links a {
-    margin-right: 10px;
-}
-
 /* Hamburger Menu */
 .menu-toggle {
     display: none;
@@ -227,10 +231,12 @@ section p a:hover {
         align-items: flex-start;
     }
     .header-right {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
         margin-right: 0;
         margin-top: 10px;
+        gap: 8px;
     }
     .sticky-button {
         margin-top: 10px;

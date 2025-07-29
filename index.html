@@ -76,9 +76,13 @@
     <a href="https://wa.me/918891189811" class="whatsapp-float">WhatsApp</a>
 
     <script>
-        document.getElementById('menu-toggle').onclick = function () {
-            document.getElementById('navbar').classList.toggle('active');
-        };
-    </script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navbar = document.getElementById('navbar');
+
+    menuToggle.addEventListener('click', function() {
+        navbar.classList.toggle('active');
+    });
+</script>
+
 </body>
 </html>

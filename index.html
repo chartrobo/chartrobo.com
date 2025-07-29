@@ -1,62 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ChartRobo | Home</title>
-
-  <!-- SEO Meta Description -->
-  <meta name="description" content="ChartRobo is your smart trading assistant that helps you spot and strike high-probability trades confidently.">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
-
-  <!-- External CSS -->
-  <link rel="stylesheet" href="css/style.css" />
-
-  <!-- Redirect to HTTPS and www -->
-  <script>
-    if (
-      location.protocol !== "https:" ||
-      location.hostname === "chartrobo.com"
-    ) {
-      location.href = "https://www.chartrobo.com" + location.pathname + location.search + location.hash;
-    }
-  </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ChartRobo helps traders find high-probability trades using custom TradingView indicators - TradeRadar & WaveX. Get free trials and see live trading sessions." />
+    <title>ChartRobo | Home</title>
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-
-  <header>
-    <div class="logo">
-      <img src="images/logo.png" alt="Chart Robo Logo" width="200">
-      <h1>Welcome to ChartRobo</h1>
-    </div>
-
-    <nav aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact Us</a>
-      <a href="free-trial.html">Free Trial</a>
-    </nav>
-  </header>
-
-  <main>
-    <h2>Your Smart Trading Assistant</h2>
-    <p>ChartRobo helps you scan, spot and strike the high probability trades. It helps you detect market reversals and ride the wave with confidence.</p>
-  </main>
-
-  <footer>
-    <nav aria-label="Footer navigation">
-      <a href="privacy-policy.html">Privacy Policy</a>
-      <a href="terms-and-conditions.html">Terms & Conditions</a>
-      <a href="cancellation-refund.html">Cancellation & Refund</a>
-      <a href="shipping-and-delivery.html">Shipping & Delivery</a>
-    </nav>
-    <p>&copy; 2025 ChartRobo. All rights reserved.</p>
-  </footer>
-
-  <!-- JavaScript -->
-  <script src="js/script.js"></script>
+    <header>
+        <div class="header-left">
+            <img src="images/logo.png" alt="ChartRobo Logo" class="header-logo" />
+            <p><b><i>Founder/Owner</i> - <i>Brajesh Kumar</i></b></p>
+        </div>
+        <!-- Hamburger Icon for Mobile -->
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trial-pricing.html">Trial & Pricing</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <a href="https://youtube.com/@ChartRobo" target="_blank" class="social-icon">
+                <img src="images/youtube-icon.png" alt="YouTube" />
+            </a>
+	    <a href="https://www.facebook.com/ChartRobo" target="_blank" class="social-icon">
+                <img src="images/facebook-icon.png" alt="Facebook" />
+            </a>
+            <a href="https://www.instagram.com/chartrobo/" target="_blank" class="social-icon">
+	         <img src="images/instagram-icon.png" alt="Instagram"/>
+	    </a>
+	    <a href="https://x.com/ChartRobo" target="_blank" class="social-icon">
+	         <img src="images/twitter-icon.png" alt="Twitter"/>
+	    </a>
+	    <a href="https://www.linkedin.com/company/ChartRobo" target="_blank" class="social-icon">
+	         <img src="images/linkedin-icon.png" alt="LinkedIn"/>
+	    </a>
+            <a href="https://t.me/ChartRobo" target="_blank" class="social-icon">
+                <img src="images/telegram-icon.png" alt="Telegram" />
+            </a>
+	    <a href="https://wa.me/918891189811" target="_blank" class="social-icon">
+		<img src="images/whatsapp-icon.png" alt="Whatsapp"/>
+	    </a>
+            <a href="trial-pricing.html" class="sticky-button">Get Free Trial</a>
+        </div>
+    </header>
+    <main>
+        <section>
+            <img src="images/logo.png" alt="ChartRobo Logo Large" width="200" class="logo" />
+            <h1>Welcome to ChartRobo — "Your Smart Trading Assistant"</h1>
+            <p>ChartRobo presents Two Custom TradingView Indicators — <b>"TradeRadar"</b> & <b>"WaveX"</b></p>
+            <p>Watch Our <button onclick="location.href='https://youtube.com/@ChartRobo'">Live Trading</button> Sessions & See them in Action</p>            
+        </section>
+        <section>
+            <h3>How Our Indicators Work:</h3>
+            <p><strong>TradeRadar</strong> — "Scan, Spot & Strike": Designed to find stocks which can be held till monthly expiry or target.<br />
+                <strong>WaveX</strong> — "Detect the Reversal. Ride the Wave": Designed to find reversal points at any standard timeframes.<br /><br />
+                "<b>Jackpot Trade</b> --When WaveX Supports TradeRadar"</p>
+        </section>
+        <section>
+            <h3>Why Trust ChartRobo:</h3>
+            <p>Do not trust blindly. Get a free trial, Perform live testing with paper trade, Then subscribe only if you find it useful.</p>
+        </section>
+        <section>
+            <h3>Success Stories:</h3>
+            <p>Submit your success story with verified monthly P&L to our email to get featured here.</p>
+        </section>
+        <footer>
+            <nav>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms & Conditions</a>
+                <a href="refund.html">Cancellation & Refund</a>
+                <a href="shipping.html">Shipping & Delivery</a>
+            </nav>
+            <p>&copy; 2025 ChartRobo. All rights reserved.</p>
+        </footer>
+    </main>
+    <a href="https://wa.me/918891189811" class="whatsapp-float">WhatsApp</a>
+    <script>
+        // Toggle mobile menu
+        document.getElementById('menu-toggle').onclick = function () {
+            document.getElementById('navbar').classList.toggle('active');
+        };
+    </script>
 </body>
 </html>

@@ -21,14 +21,14 @@ a:hover {
 }
 main {
     width: 100%;
-    padding: 10px 0; /* Removed left/right padding */
+    padding: 10px 0;
     margin: 0;
 }
 
 /* Header */
 header {
     width: 100%;
-    background-color: #F9FAFB; /* Light Gray */
+    background-color: #F9FAFB;
     color: #111827;
     display: flex;
     flex-wrap: wrap;
@@ -122,7 +122,7 @@ ul {
     list-style: disc;
 }
 
-/* Pricing Cards */
+/* Pricing Grid (Old Cards) */
 .pricing-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -168,7 +168,7 @@ ul {
 /* Footer */
 footer {
     width: 100%;
-    background-color: #F9FAFB; /* Light Gray */
+    background-color: #F9FAFB;
     color: #111827;
     padding: 15px 20px;
     text-align: center;
@@ -251,7 +251,7 @@ footer nav a.active {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 20px 0; /* Removed left/right padding */
+    padding: 20px 0;
     background-color: #FFFFFF;
 }
 .hero-section img.logo {
@@ -279,4 +279,63 @@ footer nav a.active {
 }
 .hero-section button:hover {
     background-color: #163172;
+}
+
+/* New Pricing Table Box */
+.pricing-table-box {
+    width: 100%;
+    background-color: #F3F4F6;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.pricing-header, .pricing-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 15px;
+    text-align: center;
+    align-items: center;
+}
+
+.pricing-header {
+    background-color: #E5E7EB;
+    font-weight: bold;
+    color: #111827;
+}
+
+.pricing-row {
+    background-color: #FFFFFF;
+    border-top: 1px solid #E5E7EB;
+}
+
+.subscribe-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-button:hover {
+    background-color: #1ebd59;
+}
+
+/* Responsive Table Scroll for Small Screens */
+@media (max-width: 600px) {
+    .pricing-header, .pricing-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 10px;
+    }
+    .pricing-header div:nth-child(3), .pricing-header div:nth-child(4),
+    .pricing-row div:nth-child(3), .pricing-row div:nth-child(4) {
+        grid-column: span 2;
+    }
 }

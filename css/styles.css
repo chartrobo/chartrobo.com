@@ -82,14 +82,14 @@ nav ul li a.active {
     height: 24px;
 }
 .sticky-button {
-    background-color: #10B981;
+    background-color: #1ebd59;
     color: white;
     padding: 8px 12px;
     border-radius: 4px;
     font-weight: bold;
 }
 .sticky-button:hover {
-    background-color: #0E9E6E;
+    background-color: white;
 }
 
 /* General Boxed Section Style */
@@ -165,7 +165,7 @@ ul {
 
 /* Footer */
 footer {
-    background-color: #F3F4F6; /* Light Gray */
+    background-color: #F9FAFB; /* Light Gray */
     color: #111827;
     padding: 15px 20px;
     text-align: center;

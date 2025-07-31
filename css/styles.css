@@ -227,7 +227,7 @@ footer nav a.active {
 .form-button {
     display: inline-block;
     padding: 12px 25px;
-    background-color: #1E3A8A;
+    background-color: #87CEEB;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -236,7 +236,7 @@ footer nav a.active {
     transition: background-color 0.3s ease;
 }
 .form-button:hover {
-    background-color: #163172;
+    background-color: white;
 }
 
 /* Hero Section */

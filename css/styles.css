@@ -178,6 +178,7 @@ footer nav {
 footer nav a {
     margin: 0 10px;
     color: #111827;
+    font-weight: bold;
 }
 footer nav a.active {
     text-decoration: underline;

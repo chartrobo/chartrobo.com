@@ -91,7 +91,7 @@ nav ul li a.active {
 }
 
 main {
-    padding-top: 10px; /* Reduced from 80px to adjust for smaller header */
+    padding-top: 20px; /* Reduced from 80px to adjust for smaller header */
 }
 
 section {

@@ -248,6 +248,7 @@ footer nav a.active {
 .hero-section img.logo {
     width: 200px;
     height: auto;
+    margin-top: 0px;
     margin-bottom: 20px;
 }
 .hero-section h1 {

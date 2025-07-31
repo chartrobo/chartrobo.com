@@ -250,6 +250,7 @@ footer nav a.active {
     height: auto;
     margin-top: 0px;
     margin-bottom: 20px;
+    padding: 0px;
 }
 .hero-section h1 {
     font-size: 28px;

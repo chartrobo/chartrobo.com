@@ -33,7 +33,7 @@ header {
 }
 
 .header-logo {
-    width: 40px; /* Reduced logo width */
+    width: 50px; /* Reduced logo width */
     height: auto;
 }
 
@@ -91,7 +91,7 @@ nav ul li a.active {
 }
 
 main {
-    padding-top: 70px; /* Reduced from 80px to adjust for smaller header */
+    padding-top: 10px; /* Reduced from 80px to adjust for smaller header */
 }
 
 section {
@@ -273,18 +273,18 @@ section p a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 80px 20px 50px; /* Reduced top padding from 100px */
+    padding: 10px 20px 10px; /* Reduced top padding from 100px */
 }
 
 .hero-section img.logo {
-    width: 200px;
+    width: 250px;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .hero-section h1 {
     font-size: 28px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .hero-section p {

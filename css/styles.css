@@ -19,7 +19,7 @@ a:hover {
 }
 main {
     padding: 20px;
-    max-width: 1200px;  /* From CSS File 1 */
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -89,6 +89,15 @@ nav ul li a.active {
     background-color: #00bfa1;
 }
 
+/* General Boxed Section Style */
+.content-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
 /* Section Headings */
 h1, h2 {
     margin-bottom: 15px;
@@ -108,12 +117,11 @@ ul {
     list-style: disc;
 }
 
-/* Pricing Cards (From CSS File 1) */
+/* Pricing Cards (Hover Effects from CSS 1) */
 .pricing-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    padding: 20px;
 }
 .pricing-card {
     background-color: white;
@@ -132,7 +140,7 @@ ul {
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 15px;
-    color: #00d1b2;  /* Teal Accent */
+    color: #00d1b2;
 }
 .pricing-button {
     display: inline-block;
@@ -146,7 +154,8 @@ ul {
 .pricing-button:hover {
     background: #00bfa1;
 }
-/* Hide old UL and h3 if any */
+
+/* Hide Old UL and h3 if Any */
 .pricing-card ul, .pricing-card h3, .pricing-card .price {
     display: none;
 }

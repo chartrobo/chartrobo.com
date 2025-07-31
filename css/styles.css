@@ -39,7 +39,7 @@ header {
 
 .header-left p {
     margin: 0;
-    font-size: 13px; /* Optional: slightly smaller text */
+    font-size: 16px; /* Optional: slightly smaller text */
 }
 
 nav ul {
@@ -64,7 +64,7 @@ nav ul li a.active {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-right: 10px; /* Reduced from 20px */
+    margin-right: 20px; /* Reduced from 20px */
 }
 
 .social-icon img {
@@ -80,7 +80,7 @@ nav ul li a.active {
 .sticky-button {
     background: #28a745;
     color: white;
-    padding: 8px 16px; /* Slightly reduced button padding */
+    padding: 6px 12px; /* Slightly reduced button padding */
     border-radius: 5px;
     text-decoration: none;
     display: inline-block;

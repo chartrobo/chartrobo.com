@@ -19,7 +19,7 @@ a:hover {
 }
 main {
     padding: 20px;
-    max-width: 1200px;
+    max-width: 1200px;  /* From CSS File 1 */
     margin: 0 auto;
 }
 
@@ -108,7 +108,7 @@ ul {
     list-style: disc;
 }
 
-/* Pricing Cards */
+/* Pricing Cards (From CSS File 1) */
 .pricing-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -119,9 +119,9 @@ ul {
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .pricing-card:hover {
@@ -132,7 +132,7 @@ ul {
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 15px;
-    color: #00d1b2;  /* Teal Color Accent */
+    color: #00d1b2;  /* Teal Accent */
 }
 .pricing-button {
     display: inline-block;
@@ -143,12 +143,10 @@ ul {
     border-radius: 5px;
     font-weight: bold;
 }
-
 .pricing-button:hover {
     background: #00bfa1;
 }
-
-/* Hide Old UL and h3 if Any */
+/* Hide old UL and h3 if any */
 .pricing-card ul, .pricing-card h3, .pricing-card .price {
     display: none;
 }

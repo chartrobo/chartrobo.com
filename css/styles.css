@@ -347,3 +347,40 @@ footer nav a.active {
         grid-column: span 2;
     }
 }
+/* Default Desktop Layout */
+.pricing-header, .pricing-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 15px;
+    text-align: center;
+    align-items: center;
+}
+
+/* Mobile Responsive Fix */
+@media (max-width: 600px) {
+    .pricing-header, .pricing-row {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .pricing-header div, .pricing-row div {
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    .pricing-header {
+        background-color: #E5E7EB;
+        font-weight: bold;
+    }
+
+    .pricing-row {
+        border-top: 1px solid #E5E7EB;
+        background-color: #FFFFFF;
+    }
+
+    .subscribe-button {
+        margin-top: 5px;
+    }
+}

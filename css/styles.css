@@ -339,3 +339,13 @@ footer nav a.active {
         grid-column: span 2;
     }
 }
+.pricing-section-title {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0;
+    background-color: #E5E7EB;
+    border-top: 2px solid #D1D5DB;
+    border-bottom: 2px solid #D1D5DB;
+    margin-top: 10px;
+}

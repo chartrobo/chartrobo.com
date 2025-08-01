@@ -192,7 +192,7 @@ footer nav a.active {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #25D366;
+    background-color: #1ebd59;
     color: white;
     padding: 10px 15px;
     border-radius: 50px;
@@ -202,7 +202,7 @@ footer nav a.active {
     box-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
 .whatsapp-float:hover {
-    background-color: #1ebd59;
+    background-color: white;
 }
 
 /* Responsive Menu */

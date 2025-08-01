@@ -384,3 +384,41 @@ footer nav a.active {
         margin-top: 5px;
     }
 }
+.sticky-trial-notice {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1E90FF;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    z-index: 1000;
+    cursor: default;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    animation: pulse 2s infinite;
+}
+
+.close-btn {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10px;
+    cursor: pointer;
+    color: white;
+    transition: color 0.3s;
+}
+
+.close-btn:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(30, 144, 255, 0.7); }
+    70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(30, 144, 255, 0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(30, 144, 255, 0); }
+}

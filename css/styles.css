@@ -281,21 +281,20 @@ footer nav a.active {
     background-color: #163172;
 }
 
-/* New Pricing Table Box */
+/* New Pricing Table Box with Vertical Partitions */
 .pricing-table-box {
     width: 100%;
     background-color: #F3F4F6;
     border: 1px solid #E5E7EB;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    overflow: hidden;
+    overflow-x: auto;
     margin: 20px 0;
 }
 
 .pricing-header, .pricing-row {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 15px;
     text-align: center;
     align-items: center;
 }
@@ -304,6 +303,15 @@ footer nav a.active {
     background-color: #E5E7EB;
     font-weight: bold;
     color: #111827;
+}
+
+.pricing-header div, .pricing-row div {
+    padding: 15px;
+    border-right: 1px solid #D1D5DB;
+}
+
+.pricing-header div:last-child, .pricing-row div:last-child {
+    border-right: none; /* Remove border from last column */
 }
 
 .pricing-row {
@@ -338,14 +346,4 @@ footer nav a.active {
     .pricing-row div:nth-child(3), .pricing-row div:nth-child(4) {
         grid-column: span 2;
     }
-}
-.pricing-section-title {
-    grid-column: 1 / -1;
-    text-align: center;
-    font-weight: bold;
-    padding: 10px 0;
-    background-color: #E5E7EB;
-    border-top: 2px solid #D1D5DB;
-    border-bottom: 2px solid #D1D5DB;
-    margin-top: 10px;
 }

@@ -1,0 +1,26 @@
+{
+  "status": "active",
+  "title": "Latest ChartRobo Analysis",
+  "message": "New market observations will be added regularly.",
+  "redirectUrl": "https://brajeshkumar.in",
+  "posts": [
+    {
+      "id": "20260902-001",
+      "title": "Intraday Support Zone",
+      "timestamp": "02 Sep 2026 • 10:32 AM",
+      "body": "Support zone identified. Let's see how price reacts near the zone."
+    },
+    {
+      "id": "20260902-002",
+      "title": "Resistance Zone",
+      "timestamp": "02 Sep 2026 • 11:15 AM",
+      "body": "Price is approaching an important resistance area. Watch the price action near the zone."
+    },
+    {
+      "id": "20260901-001",
+      "title": "Market Structure",
+      "timestamp": "01 Sep 2026 • 09:48 AM",
+      "body": "A key market structure area is developing. Observation continues."
+    }
+  ]
+}
